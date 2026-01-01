@@ -1,0 +1,233 @@
+[INFO] Loading DB Config from file: configs/sample_runtime.cfg (/home/hippo/Nemo/src/db/ARDB.cpp:53) 
+[INFO] Loading DB Config: exp_point_100m_tuple_varybuf_rw_record (/home/hippo/Nemo/src/db/ARDB.cpp:56) 
+g_index_type: BTREE
+g_idx_btree_fanout: 250
+g_idx_btree_split_ratio: 0.9
+g_uni_page_idx_tbl: True
+g_buf_type: OBJBUF
+g_total_buf_sz: 60000000
+g_top_tree_buf_sz: 10240000
+g_bottom_tree_buf_sz: 10240000
+g_pagebuf_num_slots: 16384
+g_buf_entry_sz: 1000
+g_batch_eviction_period_ms: 20
+g_retain_idx_page: False
+g_batch_eviction: False
+g_eviction_simple_clock: True
+g_enable_group_commit: True
+g_commit_queue_limit: 100
+g_commit_group_sz: 0
+g_log_freq_us: 100
+g_load_to_remote_only: False
+g_restore_from_remote: True
+g_check_loaded: False
+g_partition_sz: 10000
+g_load_range: False
+g_num_restore_thds: 8
+g_num_load_thds: 8
+g_remote_req_retries: 2000
+g_num_worker_threads: 16
+g_commit_pool_sz: 1
+g_cpu_freq: 1
+g_num_evict_thds: 1
+g_evict_threshold: 0.9
+g_warmup_finished: False
+g_enable_logging: True
+g_force_write: False
+g_zipf_random_hotspots: True
+g_scan_zipf_random_hotspots: False
+g_scan_zipf_partition_sz: 10000
+g_node_id: 0
+g_save_output: True
+g_early_lock_release: True
+g_enable_phantom_protection: False
+g_enable_partition_covering_lock: False
+g_partition_covering_lock_unit_sz: 10000
+g_enable_latency_distr_log: False
+g_scan_length: 999
+g_scan_workload_rw_thd_num: 0
+g_workingset_partition_num: 0
+[INFO] Loading YCSB Config from file: configs/sample_runtime.cfg (/home/hippo/Nemo/benchmark/ycsb/YCSBConfig.h:21) 
+[INFO] Loading YCSB Config: exp_point_100m_tuple_varybuf_rw_record (/home/hippo/Nemo/benchmark/ycsb/YCSBConfig.h:24) 
+runtime_: 30
+warmup_time_: 10
+num_rows_: 102400
+num_req_per_query_: 16
+zipf_theta_: 0
+read_perc_: 1
+rw_txn_perc_: 1
+insert_txn_perc_: 0
+loading_startkey: 0
+loading_endkey: 0
+num_workers_: 16
+[INFO] dataset id: obj-0g (/home/hippo/Nemo/experiments/ExpYCSB.cpp:21) 
+[INFO] CPU freqency is 2.09 (/home/hippo/Nemo/src/common/Common.h:53) 
+[INFO] Start ARDB instance. (/home/hippo/Nemo/src/db/ARDB.cpp:21) 
+[DEBUG] Created azure table client.  (/home/hippo/Nemo/src/remote/AzureTableClient.h:20) 
+[INFO] Log store name obj-0g-log (/home/hippo/Nemo/src/remote/ILogStore.cpp:11) 
+[DEBUG] Created azure table client.  (/home/hippo/Nemo/src/remote/AzureTableClient.h:20) 
+[DEBUG] deleted table obj-0g-log (/home/hippo/Nemo/src/remote/AzureTableClient.h:28) 
+[DEBUG] Created table obj-0g-log (/home/hippo/Nemo/src/remote/AzureTableClient.h:36) 
+[INFO] Initiated Object Buffer with 48000 slots (/home/hippo/Nemo/src/db/buffer/ObjectBufferManager.cpp:22) 
+[INFO] [ObjectBufferManager] Started 1 eviction threads. (/home/hippo/Nemo/src/db/buffer/ObjectBufferManager.cpp:74) 
+[INFO] Start ycsb workload (/home/hippo/Nemo/benchmark/ycsb/ycsb.h:13) 
+[DEBUG] Start init sechma (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:16) 
+[DEBUG] Created table obj-0g-0 (/home/hippo/Nemo/src/remote/AzureTableClient.h:36) 
+[INFO] Created btree index with fanout = 250 and split_threshold = 225 (/home/hippo/Nemo/src/db/access/IndexBTreeObject.cpp:22) 
+[DEBUG] End init sechma (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:18) 
+[DEBUG] Start Warm Up (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:164) 
+[DEBUG] tuple size = 1008 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:187) 
+[DEBUG] warm up status: 10 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 5138 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 10266 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 15302 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 20533 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 25446 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 30687 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 35969 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 41097 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 45790 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 44971 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 44122 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 43317 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 46681 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 46187 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 46056 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 45592 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 45167 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 44674 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 44303 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 43975 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[DEBUG] warm up status: 43346 / 48000 (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:195) 
+[INFO] Loaded 44037 rows in memory (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:229) 
+[DEBUG] restored table obj-0g-0 with 102400 rows (/home/hippo/Nemo/src/local/ITableLoadHelper.cpp:72) 
+[INFO] Finished warming up cache for YCSB workload (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:167) 
+[INFO] Thread-1 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-0 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-14 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-5 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-13 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-8 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-9 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-11 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-10 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-3 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] [INFO] Thread-15 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-7 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-6 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-4 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+Thread-2 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Thread-12 starts execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:29) 
+[INFO] Finished warming up (/home/hippo/Nemo/benchmark/ycsb/ycsb.h:36) 
+[DEBUG] commit thread 6 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 7 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 10 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 9 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 4 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 3 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 15 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 13 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 14 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 0 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 2 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 5 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 11 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 8 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 1 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[DEBUG] commit thread 12 finishes 0 txns (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:114) 
+[INFO] Terminating execution. (/home/hippo/Nemo/src/db/ARDB.cpp:144) 
+[INFO] Joined all commit threads. (/home/hippo/Nemo/src/db/ARDB.cpp:147) 
+[INFO] Thread-3 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-12 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-15 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-13 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-10 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-4 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-6 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-1 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-8 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-0 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-2 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-14 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-11 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-9 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-7 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Thread-5 finishes execution! (/home/hippo/Nemo/benchmark/ycsb/YCSBWorkload.cpp:157) 
+[INFO] Joined all worker threads. (/home/hippo/Nemo/src/db/ARDB.cpp:149) 
+[INFO] Print DB stats:  (/home/hippo/Nemo/src/common/Stats.h:229) 
+Total accesses_: 48828
+Total misses_: 29478
+Total tuple_accesses_: 48828
+Total idx_misses_: 0
+Total idx_accesses_: 0
+Total bufferd_idx_pgs_: 0
+Total remote_rds_: 29478
+Total remote_wrs_: 0
+Total remote_rws_: 0
+Total remote_scans_: 0
+Total abort_cnt_: 0
+Total scan_abort_cnt_: 0
+Total rw_abort_cnt_: 0
+Total more_than_one_scan_txns_: 0
+Total txn_cnt_: 3059
+Total scan_txn_cnt_: 0
+Total rw_txn_cnt_: 3059
+Total log_time_ (ms): 1.59252
+Total cc_time_ (ms): 36.0548
+Total idx_time_ (ms): 480614
+Total abort_time_ (ms): 0
+Total commit_time_ (ms): 0
+Total scan_abort_time_ (ms): 0
+Total rw_abort_time_ (ms): 0
+Total remote_io_time_ (ms): 479615
+Total remote_rd_time_ (ms): 479615
+Total remote_wr_time_ (ms): 0
+Total remote_rw_time_ (ms): 0
+Total remote_scan_time_ (ms): 0
+txn_latency_ ( 0% in us): 41727.6
+txn_latency_ (50% in us): 156925
+txn_latency_ (99% in us): 258092
+txn_latency_ (max in us): 328713
+txn_latency_ (avg in us): 157626
+txn_latency_ (sum ): 4.82177e+08, size: 3059
+txn_latency_ (new avg in us): 157626
+rw_txn_latency_ ( 0% in us): 41727.6
+rw_txn_latency_ (50% in us): 156925
+rw_txn_latency_ (99% in us): 258092
+rw_txn_latency_ (max in us): 328713
+rw_txn_latency_ (avg in us): 157626
+rw_txn_latency_ (sum ): 4.82177e+08, size: 3059
+rw_txn_latency_ (new avg in us): 157626
+Total log_group_sz_: 0
+Total num_flushes_: 0
+Total log_group_payload_sz_: 0
+Total log_latency_ (ms): 0
+Total log_flush_interval_ (ms): 0
+Average sum_txn_latency (us): 157625.71, (sum 3059, cnt 0)
+Average sum_rw_txn_latency (us): 157625.71, (sum 3059, cnt 44)
+Average abort_time_ (us): 0.00, (sum 3059, cnt 44)
+Average scan_abort_time_ (us): 0.00, (sum 0, cnt 44)
+Average rw_abort_time_ (us): 0.00, (sum 3059, cnt 44)
+Average cc_time_ (us): 11.79, (sum 3059, cnt 44)
+Average log_time_ (us): 0.52, (sum 3059, cnt 44)
+Average remote_io_time_ (us): 156788.08, (sum 3059, cnt 44)
+Average log_group_sz_: 0.00
+Average log_group_payload_sz_: 0.00
+Average log_flush_interval_ (us): 0.00, (sum 0, cnt 44)
+Average sum_log_flush_latency (us): 0.00, (sum 0, cnt 44)
+Idx Hit Rate: 0.00
+Tuple Hit Rate: 0.40
+[INFO] Print Bench Stats: (/home/hippo/Nemo/benchmark/common/BenchWorker.h:45) 
+Total rw_commit_cnt_: 6118
+Total insert_commit_cnt_: 0
+Total scan_commit_cnt_: 0
+Total thd_runtime_ (ms): 964354
+Total rw_txn_latency_ (ms): 964354
+Total scan_txn_latency_ (ms): 0
+Total insert_txn_latency_ (ms): 0
+Total rw_txn_user_latency_ (ms): 964354
+Total scan_txn_user_latency_ (ms): 0
+Total insert_txn_user_latency_ (ms): 0
+Average runtime (sec) of each worker: 60.27
+Throughput (txn/sec): 101.97
+azure16k-tuple-buf0.5-read1-zipf0

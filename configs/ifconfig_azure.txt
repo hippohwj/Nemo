@@ -1,0 +1,1 @@
+DefaultEndpointsProtocol=https;AccountName=autoscale2023cosmos;AccountKey=MZgzUZ5IqrVz4AapZ6SzKKKcWhzxXUWOPTRMm7uSgEWcV18SwGUREIoTR2geivUdJIuoWJnMf1rIACDb8LHDdw==;TableEndpoint=https://autoscale2023cosmos.table.cosmos.azure.com:443/;

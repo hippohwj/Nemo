@@ -1,0 +1,54 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Clion / Cmake
+.idea
+.DS_Store
+**.DS_Store
+cmake-build-debug/*
+cmake-build-debug*
+third_party/
+
+# Python
+.ipynb*
+__pycache__*
+*.backup
+
+# Customized
+experiments/*.log
+CMakeFiles/*
+_deps/*
+build/*
+python_deps/*
+.vscode/*
+*.cmake
