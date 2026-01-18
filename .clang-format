@@ -1,0 +1,5 @@
+BasedOnStyle: Google
+UseTab: Never
+DerivePointerAlignment: false
+PointerAlignment: Left
+ColumnLimit: 120

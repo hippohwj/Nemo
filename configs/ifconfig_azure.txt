@@ -1,0 +1,1 @@
+DefaultEndpointsProtocol=https;AccountName=REPLACE_TO_YOUR_ACCOUNT;AccountKey=REPLACE_TO_YOUR_KEY;TableEndpoint=https://REPLACE_TO_YOUR_ENDPOINT/
